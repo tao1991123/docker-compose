@@ -11,8 +11,6 @@ services:
       - './site.conf:/etc/nginx/sites-enabled/site.conf'
   eggjs:
     image: 'hub.tencentyun.com/muchen/eggjs:0.0.1'
-    ports:
-      - '7001:7001'
     networks:
       - 'eggjs-network'
 networks:
